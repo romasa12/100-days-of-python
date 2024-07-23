@@ -320,7 +320,12 @@ name2=data[second]['name']
 b=data[second]['follower_count']
 print(f"B : {name2} ,a {data[second]['description']} from {data[second]['country']}")
 #print(f"followers are{b}")
-while game==True:   
+while game==True:  
+    while name1==name2:
+    num=random.randint(0,49)
+    name2=data[num]['name']
+    b=data[num]["follower_count"]
+            
     #print(f"Name1: {name1} a: {a}")
     #print(f"Name2: {name2} a: {b}")
     def name():
